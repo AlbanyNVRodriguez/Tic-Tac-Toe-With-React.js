@@ -1,0 +1,41 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    background: $black_1
+    color: $white
+    width: 100%
+    font-family: inter
+    font-size: 1em
+
+body
+    width: 100%
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+
+#root
+    padding: 1rem
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: start
+    flex-flow: row wrap
+    gap: 3rem
+
+h3
+    font-weight: 500
+    font-size: 1.3em
+
+.title
+    width: 100%
+    text-align: center
+    color: $primary_color
+    font-weight: 500
+
+.register
+    +mixin_flex(center, start, row wrap)
+    gap: 3rem

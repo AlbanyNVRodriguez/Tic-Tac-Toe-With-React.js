@@ -1,0 +1,27 @@
+.board
+    position: relative
+    
+.board_btn-rematch
+    position: absolute
+    content: "rematch!"
+    position: absolute
+    width: 100%
+    font-size: 2em
+    color: $black_2
+    transform: translateY(150px)
+    outline: none
+    border: none
+    transition: all 200ms ease-in-out
+    &:hover
+        background: $white
+.board_title
+    text-align: center
+    margin-bottom: 1rem
+.board_game
+    margin: auto
+    display: grid
+    grid-template-columns: repeat(3, auto)
+    grid-template-rows: repeat(3, auto)
+    gap: .5rem
+    justify-content: center
+    align-items: center
