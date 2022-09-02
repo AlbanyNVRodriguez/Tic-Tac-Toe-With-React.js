@@ -1,5 +1,5 @@
 #Tic Tac Toe With React.js
 
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
+![](https://github.com/AlbanyNVRodriguez/Tic-Tac-Toe-With-React.js/public/preview.png)
 
 > My first project with react.js.
