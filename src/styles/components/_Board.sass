@@ -14,9 +14,11 @@
     transition: all 200ms ease-in-out
     &:hover
         background: $white
+
 .board_title
     text-align: center
     margin-bottom: 1rem
+    
 .board_game
     margin: auto
     display: grid
@@ -25,3 +27,20 @@
     gap: .5rem
     justify-content: center
     align-items: center
+
+.square
+    width: 5rem
+    height: 5rem
+    font-size: 4.5em
+    +mixin_flex(center, center, row nowrap)
+    background: $black_2
+    user-select: none
+    cursor: pointer
+    transition: all 200ms ease
+
+.square.winner
+    background: $primary_color
+    color: $black_2
+    
+.square.disabled
+    user-select: none

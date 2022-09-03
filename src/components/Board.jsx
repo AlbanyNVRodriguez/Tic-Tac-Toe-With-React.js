@@ -1,6 +1,3 @@
-import { useEffect, useState } from "react";
-import { Square } from "./Square"
-
 export const Board = ({ rematch, allSquare, title, handleClick }) => {
     return (
         <div className="board">
@@ -8,7 +5,8 @@ export const Board = ({ rematch, allSquare, title, handleClick }) => {
             <h3 className="board_title">{title.text} <span className={title.player == "X"? "color-red" : "color-violet"}>{title.player}</span></h3>
             <div className="board_game" >
                 {
-                    allSquare.map((value, index) => <Square key={index} index={index} value={allSquare[index]} handleClick={handleClick} />)
+                    allSquare.map((value, index) => 
+                        <div key={index} className='square' data-index={index} onClick={handleClick}>{value}</div>)
                 }
             </div>
         </div>
